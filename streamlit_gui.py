@@ -35,7 +35,7 @@ def attribute_query(q1, isRequired=None):
 
 def main():
     # Streamlit UI
-    st.title("属性定義書サーチ")
+    st.title("属性定義書ナビ")
     genre_hierarchys = st.sidebar.multiselect('ジャンル階層名', get_distinct_values("ジャンル階層名"), max_selections=1)
 
     if genre_hierarchys:

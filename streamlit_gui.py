@@ -39,7 +39,7 @@ def main():
     genre_hierarchys = st.sidebar.multiselect('ジャンル階層名', get_distinct_values("ジャンル階層名"))
 
     if genre_hierarchys:
-        isRequired = st.sidebar.checkbox('必須/任意')
+        isRequired = st.sidebar.checkbox('必須')
         attribute_names = st.sidebar.multiselect(
             '項目名', attribute_query(genre_hierarchys[0], isRequired))
 
